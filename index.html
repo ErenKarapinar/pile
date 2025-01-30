@@ -38,6 +38,12 @@
         .chart-container, .twitter-container {
             margin-top: 40px;
         }
+        .twitter-timeline {
+            width: 100%;
+            max-height: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -57,14 +63,13 @@
             </iframe>
         </div>
 
-        <!-- Twitter (X) Feed for $PILL -->
+        <!-- Live Twitter Feed for $PILL -->
         <div class="twitter-container">
-            <h2>Latest Tweets About $PILL</h2>
-            <a class="twitter-timeline" 
-               data-theme="dark" 
-               href="https://twitter.com/search?q=%24PILL">
-               Tweets about $PILL
-            </a> 
+            <h2>Live $PILL Tweets</h2>
+            <iframe src="https://twitter.com/i/events/your-event-id?ref_src=twsrc%5Etfw" 
+                    class="twitter-timeline" 
+                    allowfullscreen>
+            </iframe>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
