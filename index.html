@@ -27,9 +27,13 @@
             font-size: 1.2rem;
             margin-top: 10px;
         }
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            gap: 30px;
+        }
         a {
             display: inline-block;
-            margin-top: 20px;
             padding: 10px 20px;
             font-size: 1rem;
             text-decoration: none;
@@ -43,10 +47,22 @@
             color: #cfccc0;
         }
     </style>
+    <script>
+        function handleChoice(choice) {
+            if (choice === 'yes') {
+                window.location.href = "https://x.com/trencherdotfun";
+            } else {
+                window.location.href = "https://images.randomhouse.com/cover/9780399557583";
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>Dig Your Way Out of Trenches</h1>
-    <p>Join the movement. Escape the trenches. Rise above.</p>
-    <a href="https://x.com/trencherdotfun" target="_blank">Follow us on X</a>
+    <p>If you want to get out of trenches and rise above, choose below:</p>
+    <div class="button-container">
+        <a href="#" onclick="handleChoice('yes')">Yes</a>
+        <a href="#" onclick="handleChoice('no')">No</a>
+    </div>
 </body>
 </html>
